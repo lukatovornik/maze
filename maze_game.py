@@ -6,9 +6,9 @@ from random import shuffle
 pygame.init()
 
 #############################konstante
-
+a=100
 width=1500
-heigth=int(width*0.618033)
+heigth=int(width*0.618033)-a
 
 zacetna=[0,0]
 koncna=[0,1]
@@ -159,7 +159,7 @@ class Mreza(pygame.sprite.Sprite):
 
 ##############################################################################################################end mreže
 
-okno=pygame.display.set_mode([width+10, heigth+10])
+okno=pygame.display.set_mode([width, heigth+a])
 ura=pygame.time.Clock()
 mreza=Mreza(50,50)
 
